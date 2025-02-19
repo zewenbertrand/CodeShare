@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: enterprise-search
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: enterprise-search
+  template:
+    metadata:
+      labels:
+        app: enterprise-search
+    spec:
+      containers:
+      - name: enterprise-search
+        image: docker.elastic.co/enterprise-search/enterprise-search:<version>
+        ports:
+        - containerPort: 3002
+        env:
+        - name: "ent_search.auth.source"
+          value: "standard"
