@@ -1,0 +1,2 @@
+Error: request to get security token from Kibana failed: fail to execute the HTTP POST request: Post "http://kibana:5601/api/fleet/service_tokens": lookup kibana on 172.20.0.10:53: no such host
+For help, please see our troubleshooting guide at https://www.elastic.co/guide/en/fleet/8.12/fleet-troubleshooting.html
