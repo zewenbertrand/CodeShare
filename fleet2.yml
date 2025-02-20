@@ -17,8 +17,6 @@ spec:
       containers:
       - name: fleet-server
         image: docker.elastic.co/beats/elastic-agent:8.12.0
-        securityContext:
-          runAsUser: 0  # Ensure proper permissions
         env:
         - name: FLEET_SERVER_ENABLE
           value: "true"
