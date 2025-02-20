@@ -1,0 +1,1 @@
+kubectl apply -f https://download.elastic.co/downloads/eck/8.12.0/operator.yaml
