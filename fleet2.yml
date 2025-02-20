@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fleet-server
+  namespace: elastic
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fleet-server
+  template:
+    metadata:
+      labels:
+        app: fleet-server
+    spec:
+      containers:
+      - name: fleet-server
+        image: docker.elastic.co/beats/elastic-agent:8.12.0
+        env:
+        - name: FLEET_SERVER_ENABLE
+          value: "true"
+        - name: FLEET_ENROLL
+          value: "0"  # Fleet Server will start, but NOT enroll automatically
+        - name: ELASTICSEARCH_HOST
+          value: "http://elasticsearch.elastic.svc.cluster.local:9200"
+        ports:
+        - containerPort: 8220
