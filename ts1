@@ -1,0 +1,1 @@
+kubectl exec -it elasticsearch-es-default-0 -n elk -- curl -X GET "http://elasticsearch.elastic.svc.cluster.local:9200"
