@@ -1,0 +1,7 @@
+NAME                            READY   STATUS             RESTARTS       AGE
+elasticsearch-es-default-0      1/1     Running            0              4h7m
+elasticsearch-es-default-1      1/1     Running            0              4h7m
+elasticsearch-es-default-2      1/1     Running            0              4h7m
+fleet-server-545487dbc5-ww42j   0/1     Error              2 (18s ago)    19s
+fleet-server-667f4c67-gzw92     0/1     CrashLoopBackOff   41 (34s ago)   3h5m
+[ec2-user@i-0a74106a30e2eeb8d ~]$ 
