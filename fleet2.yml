@@ -1,3 +1,4 @@
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -16,12 +17,16 @@ spec:
       containers:
       - name: fleet-server
         image: docker.elastic.co/beats/elastic-agent:8.12.0
+        securityContext:
+          runAsUser: 0  # Ensure proper permissions
         env:
         - name: FLEET_SERVER_ENABLE
           value: "true"
         - name: FLEET_ENROLL
-          value: "0"  # Fleet Server will start, but NOT enroll automatically
+          value: "0"  # Prevent Fleet from trying to enroll (since Kibana isn't running)
+        - name: FLEET_SERVER_HOST
+          value: "0.0.0.0"
         - name: ELASTICSEARCH_HOST
-          value: "http://elasticsearch.elastic.svc.cluster.local:9200"
+          value: "http://elasticsearch-es-http:9200"
         ports:
         - containerPort: 8220
