@@ -1,0 +1,5 @@
+NAME                             TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)    AGE
+elasticsearch-es-default         ClusterIP   None             <none>        9200/TCP   23m
+elasticsearch-es-http            ClusterIP   172.20.120.179   <none>        9200/TCP   23m
+elasticsearch-es-internal-http   ClusterIP   172.20.181.44    <none>        9200/TCP   23m
+elasticsearch-es-transport       ClusterIP   None             <none>        9300/TCP   23m
