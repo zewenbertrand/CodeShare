@@ -1,0 +1,3 @@
+Defaulted container "elasticsearch" out of: elasticsearch, elastic-internal-init-filesystem (init), elastic-internal-suspend (init)
+curl: (6) Could not resolve host: elasticsearch.elastic.svc.cluster.local
+command terminated with exit code 6
