@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: fleet-server
-  namespace: elastic
+  namespace: elk
 spec:
   replicas: 1
   selector:
