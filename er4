@@ -1,5 +1,0 @@
-NAME                            READY   STATUS             RESTARTS          AGE
-elasticsearch-es-default-0      1/1     Running            0                 30m
-elasticsearch-es-default-1      1/1     Running            0                 30m
-elasticsearch-es-default-2      1/1     Running            0                 30m
-fleet-server-7554df6bdd-qx2bt   0/1     CrashLoopBackOff   116 (2m18s ago)   9h
