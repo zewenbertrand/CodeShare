@@ -1,0 +1,11 @@
+agent container initialisation - chown paths
+{"log.level":"warn","@timestamp":"2025-02-21T20:21:49.760Z","log.logger":"tls","log.origin":{"function":"github.com/elastic/elastic-agent-libs/transport/tlscommon.(*TLSConfig).ToConfig","file.name":"tlscommon/tls_config.go","file.line":107},"message":"SSL/TLS verifications disabled.","ecs.version":"1.6.0"}       
+{"log.level":"info","@timestamp":"2025-02-21T20:21:50.189Z","log.origin":{"function":"github.com/elastic/elastic-agent/internal/pkg/agent/cmd.(*enrollCmd).enrollWithBackoff","file.name":"cmd/enroll_cmd.go","file.line":520},"message":"Starting enrollment to URL: https://18860048c4d64ad3865701c0946e5444.fleet.cdmdashboard.com:9243/","ecs.version":"1.6.0"}
+{"log.level":"warn","@timestamp":"2025-02-21T20:21:50.390Z","log.logger":"tls","log.origin":{"function":"github.com/elastic/elastic-agent-libs/transport/tlscommon.(*TLSConfig).ToConfig","file.name":"tlscommon/tls_config.go","file.line":107},"message":"SSL/TLS verifications disabled.","ecs.version":"1.6.0"}       
+{"log.level":"info","@timestamp":"2025-02-21T20:21:50.423Z","log.origin":{"function":"github.com/elastic/elastic-agent/internal/pkg/agent/cmd.(*enrollCmd).enrollWithBackoff","file.name":"cmd/enroll_cmd.go","file.line":526},"message":"1st enrollment attempt failed, retrying enrolling to URL: https://18860048c4d64ad3865701c0946e5444.fleet.cdmdashboard.com:9243/ with exponential backoff (init 1s, max 10s)","ecs.version":"1.6.0"}
+Error: fail to enroll: fail to execute request to fleet-server: could not decode the response, raw response: <html>
+<head><title>403 Forbidden</title></head>
+<body>
+<center><h1>403 Forbidden</h1></center>
+</body>
+</html>
