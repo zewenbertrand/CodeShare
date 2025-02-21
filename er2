@@ -1,0 +1,2 @@
+ kubectl exec -it -n kube-system elasticsearch-es-default-1 -- bash
+Error from server (NotFound): pods "elasticsearch-es-default-1" not found
