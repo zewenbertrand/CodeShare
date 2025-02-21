@@ -1,2 +1,0 @@
-kubectl run -n elk --rm -it debug --image=curlimages/curl -- sh
-If you don't see a command prompt, try pressing enter
