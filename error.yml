@@ -1,3 +1,0 @@
-NAME                            READY   STATUS             RESTARTS        AGE   IP               NODE                                                 NOMINATED NODE   READINESS GATES
-fleet-server-7554df6bdd-qx2bt   0/1     CrashLoopBackOff   102 (25s ago)   8h    10.100.153.109   i-01779e6de7b6f11a1.us-gov-east-1.compute.internal   <none>           <none>
-[ec2-user@i-0a74106a30e2eeb8d ~]$ 
