@@ -1,0 +1,9 @@
+[ec2-user@i-0a74106a30e2eeb8d ~]$ kubectl apply -f elasticstack.yml -n kube-system
+daemonset.apps/elastic-agent unchanged
+clusterrolebinding.rbac.authorization.k8s.io/elastic-agent created
+rolebinding.rbac.authorization.k8s.io/elastic-agent unchanged
+rolebinding.rbac.authorization.k8s.io/elastic-agent-kubeadm-config unchanged
+clusterrole.rbac.authorization.k8s.io/elastic-agent created
+role.rbac.authorization.k8s.io/elastic-agent unchanged
+role.rbac.authorization.k8s.io/elastic-agent-kubeadm-config unchanged
+serviceaccount/elastic-agent unchanged
