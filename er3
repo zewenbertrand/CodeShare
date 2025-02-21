@@ -1,3 +1,0 @@
-kubectl exec -it elasticsearch-es-default-0 -n elk -- curl -X GET http://elasticsearch-es-http:9200
-Defaulted container "elasticsearch" out of: elasticsearch, elastic-internal-init-filesystem (init), elastic-internal-suspend (init)
-curl: (52) Empty reply from server
