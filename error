@@ -1,1 +1,0 @@
-error: resource mapping not found for name: "elasticsearch" namespace: "elk" from "Elasticsearch.yml": no matches for kind "Elasticsearch" in version "elasticsearch.k8s.elastic.co/v1"
